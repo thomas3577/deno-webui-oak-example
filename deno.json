@@ -1,0 +1,10 @@
+{
+  "tasks": {
+    "run": "deno run --unstable-ffi --unstable-worker-options --allow-ffi --allow-read --allow-run --allow-net --allow-write app.ts",
+    "compile": "deno compile --unstable-ffi --unstable-worker-options --allow-ffi --allow-read --allow-run --allow-net --allow-write --include ./api.ts --output ./app.exe ./app.ts"
+  },
+  "imports": {
+    "@oak/oak": "jsr:@oak/oak@16.1",
+    "@webui/webui": "https://deno.land/x/webui@2.4.4/mod.ts"
+  }
+}
